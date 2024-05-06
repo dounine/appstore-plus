@@ -15,6 +15,7 @@ version: '3.3'
 services:
   db:
     image: postgres:16.2-alpine3.19
+    restart: always
     volumes:
       - ./data/postgres:/var/lib/postgresql/data
     environment:
@@ -23,6 +24,7 @@ services:
       - POSTGRES_PASSWORD=ROOTAbc123
   api:
     image: dounine/ipa-api:latest
+    restart: always
     depends_on:
       - db
     environment:
@@ -49,6 +51,7 @@ services:
       - ./data/app_logs:/app/logs
   node:
     image: dounine/ipa-node:latest
+    restart: always
     depends_on:
       - api
     ports:
