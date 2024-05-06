@@ -97,19 +97,19 @@ server {
 ## 更新引导
 > 不同版本的更新可能会有不同的更新步骤，请根据实际情况进行操作。
 
-停止服务
+1. 停止服务
 ```shell
 docker-compose stop
 ```
-拉取最新镜像
+2. 拉取最新镜像
 ```shell
 docker-compose pull
 ```
-删除旧容器
+3. 删除旧容器
 ```shell
 docker-compose rm
 ```
-启动服务
+4. 启动服务
 ```shell
 docker-compose up -d
 ```
