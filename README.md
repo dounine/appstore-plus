@@ -1,5 +1,5 @@
-# ipa-app
-> ipa-app 是一个基于网页在线安装ipa的工具，支持iOS 9.0以上版本，支持ipa文件的在线安装，可分享，可扫码安装，支持黑白主题。
+# appstore-plus
+> appstore-plus 是一个基于网页在线安装ipa的工具，支持iOS 9.0以上版本，支持ipa文件的在线安装，可分享，可扫码安装，支持黑白主题。
 
 [界面预览](./preview/README.md)
 
