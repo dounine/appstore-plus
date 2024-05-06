@@ -7,7 +7,7 @@
 
 依赖 [docker-compose.yml](./docker-compose.yml) 文件
 > 请根据文件内容自行修改配置，如数据库密码、端口等。
-```shell
+
 ```yaml
 version: '3.3'
 services:
