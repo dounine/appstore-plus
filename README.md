@@ -96,6 +96,8 @@ server {
 ```
 或者使用宝塔自行将域名映射到3000端口即可。
 
+后台管理地址：[http://localhost:3000/zh-CN/admin](http://localhost:3000/zh-CN/admin)
+
 ## 更新引导
 > 不同版本的更新可能会有不同的更新步骤，请根据实际情况进行操作。
 
@@ -115,4 +117,7 @@ docker-compose rm
 ```shell
 docker-compose up -d
 ```
+
+## 开源项目
+- [https://github.com/dounine/ipa-app-ssr](https://github.com/dounine/ipa-app-ssr)
 
