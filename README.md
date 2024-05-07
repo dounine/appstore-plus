@@ -60,13 +60,11 @@ services:
     ports:
       - "3000:3000"  # 请根据实际情况修改冒号左边的端口，如有占用，请使用其它未使用的端口
 ```
-
-创建`data`目录，用于存放数据库和ipa文件数据。
-> 目录的位置自行决定，不可手动删除，否则程序可能会异常。
+下载上面的配置文件
 ```shell
-mkdir ./data
+wget https://raw.githubusercontent.com/dounine/appstore-plus/main/docker-compose.yml
 ```
-运行`docker-compose`启动服务
+运行`docker-compose`
 ```shell
 docker-compose up -d
 ```
