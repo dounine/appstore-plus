@@ -3,6 +3,9 @@
 
 [界面预览](./preview/README.md)
 
+[![QQ群](https://img.shields.io/badge/QQ%E7%BE%A4-628633891-blue)](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=kPEQ7s8Tq_efdpfWI7JicqunBOdCtCKK&authKey=CjmL2v2EbiezEUXGBJFJHSb2mv0jt%2BE4K3Zt0R%2FWturqrVYSmENSiQHLg89xocnW&noverify=0&group_code=628633891)
+
+
 
 # 安装引导
 > 依赖`docker-compose`进行管理，操作前请确保已安装[docker](https://docs.docker.com/engine/install/)和[docker-compose](https://docs.docker.com/compose/install/linux)。
