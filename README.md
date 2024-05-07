@@ -7,7 +7,7 @@
 
 
 
-# 安装引导
+# 部署指南
 > 依赖`docker-compose`进行管理，操作前请确保已安装[docker](https://docs.docker.com/engine/install/)和[docker-compose](https://docs.docker.com/compose/install/linux)。
 
 依赖 [docker-compose.yml](./docker-compose.yml) 文件
