@@ -6,3 +6,5 @@
 .idea/
 *.iml
 *.xml
+# GitHub Copilot persisted chat sessions
+/copilot/chatSessions
