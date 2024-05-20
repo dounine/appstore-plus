@@ -6,6 +6,7 @@ services:
     volumes:
       - /data/db:/var/lib/postgresql/data  # 数据库存储目录，默认创建在/data/postgres保存，请使用绝对位置。
     environment:
+      - TZ=Asia/Shanghai  # 时区(其它时区请自行修改)
       - POSTGRES_DB=ipa-db
       - POSTGRES_USER=root
       - POSTGRES_PASSWORD=ROOTAbc123
@@ -17,6 +18,7 @@ services:
     environment:
       - database_url=postgresql://root:ROOTAbc123@db:5432/ipa-db #帐号密码请与上面db服务一致，默认不会暴露到外部(安全)，如有需要请自行修改
       - domain=http://localhost:3000  # 对外访问地址，必需修改成自己的https域名，没有端口，例如修改成：https://app.ipadump.com
+      - TZ=Asia/Shanghai  # 时区(其它时区请自行修改)
       - release=true  # 是否为生产环境(不要修改)
       - log=error   # 日志级别(不要修改)
       - locale=zh-CN   # 默认语言(不要修改)
