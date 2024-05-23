@@ -25,7 +25,7 @@ services:
     environment:
       - TZ=Asia/Shanghai  # 时区(其它时区请自行修改)
       - POSTGRES_DB=ipa-db
-      - POSTGRES_USER=root  
+      - POSTGRES_USER=root
       - POSTGRES_PASSWORD=ROOTAbc123
   api:
     image: dounine/ipa-api:latest
@@ -55,11 +55,6 @@ services:
     volumes:
       - /data/app_file:/app/file  # ipa文件存储目录，默认创建在/data/app_file保存，请使用绝对位置。
       - /data/app_logs:/app/logs  # 日志存储目录，默认创建在/data/app_logs保存，请使用绝对位置。
-  node:
-    image: dounine/ipa-node:latest
-    restart: always
-    depends_on:
-      - api
     ports:
       - "3000:3000"  # 请根据实际情况修改冒号左边的端口，如有占用，请使用其它未使用的端口
 ```
