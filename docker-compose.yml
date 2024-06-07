@@ -1,7 +1,7 @@
 version: '3.3'
 services:
   db:
-    image: postgres:16.2-alpine3.19
+    image: registry.cn-hangzhou.aliyuncs.com/dounine/postgres:16.2-alpine3.19
     restart: always
     volumes:
       - /data/db:/var/lib/postgresql/data  # 数据库存储目录，默认创建在/data/postgres保存，请使用绝对位置。
@@ -11,7 +11,7 @@ services:
       - POSTGRES_USER=root
       - POSTGRES_PASSWORD=ROOTAbc123
   api:
-    image: dounine/ipa-api:latest
+    image: registry.cn-hangzhou.aliyuncs.com/dounine/ipa-api:latest
     restart: always
     depends_on:
       - db
