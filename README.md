@@ -34,7 +34,7 @@ services:
       - db
     environment:
       - database_url=postgresql://root:ROOTAbc123@db:5432/ipa-db #帐号密码请与上面db服务一致，默认不会暴露到外部(安全)，如有需要请自行修改
-      - domain=http://localhost:3000  # 对外访问地址，必需修改成自己的https域名或者IP+端口，例如修改成：https://app.ipadump.com
+      - domain=http://localhost:3000  # 对外访问地址，必需修改成自己的(https+域名 或者 公网IP+端口)(只能二选一)，例如修改成：(https://app.ipadump.com 或者 http://192.x.x.x:3000)，如果不使用https域名，将默认使用转发协议进行ipa安装，将提示《"app.ipadump.com"想要安装"xxx"》
       - TZ=Asia/Shanghai  # 时区(其它时区请自行修改)
       - log=error   # 日志级别(不要修改)
       - locale=zh-CN   # 默认语言(不要修改)
@@ -58,7 +58,7 @@ services:
       - "3000:3000"  # 请根据实际情况修改冒号左边的端口，如有占用，请使用其它未使用的端口
 ```
 ### 必看说明
-> domain：参数必须修改成自己的域名或者ip，例如修改成：https://app.ipadump.com
+> domain：必需修改成自己的(https+域名 或者 公网IP+端口)(只能二选一)，例如修改成：(https://app.ipadump.com 或者 http://192.x.x.x:3000)，如果不使用https域名，将默认使用转发协议进行ipa安装，将提示《"app.ipadump.com"想要安装"xxx"》
 
 ## 安装步骤
 1. 下载上面的配置文件并保存到服务器任意位置
